@@ -1,6 +1,7 @@
 {
-    "recommendations": [
-        "ms-dotnettools.csdevkit",
-        "TimHeuer.resx-editor"
-    ]
+  "recommendations": [
+    "ms-dotnettools.csdevkit",
+    "TimHeuer.resx-editor",
+    "editorconfig.editorconfig"
+  ]
 }
