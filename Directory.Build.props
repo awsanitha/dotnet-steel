@@ -1,7 +1,42 @@
 <Project>
+
+  <!-- Common project properties -->
   <PropertyGroup>
-
     <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
-
   </PropertyGroup>
+
+  <!-- Language options
+       https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/language -->
+  <PropertyGroup>
+    <!-- https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/language#langversion -->
+    <LangVersion>13.0</LangVersion>
+
+    <!-- https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/language#nullable-->
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <!-- Error and warning options
+       https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/errors-warnings -->
+  <PropertyGroup>
+    <!-- https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/errors-warnings#analysis-level
+         https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#analysislevel-->
+    <AnalysisLevel>latest-all</AnalysisLevel>
+
+    <!-- https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/errors-warnings#treatwarningsaserrors -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <!-- Generated file properties 
+       https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#generated-file-properties -->
+  <PropertyGroup>
+    <!-- https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#implicitusings -->
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <!-- Build-related properties -->
+  <PropertyGroup>
+    <!-- https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#optimizeimplicitlytriggeredbuild -->
+    <OptimizeImplicitlyTriggeredBuilds>true</OptimizeImplicitlyTriggeredBuilds>
+  </PropertyGroup>
+
 </Project>
