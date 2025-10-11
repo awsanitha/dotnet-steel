@@ -84,6 +84,7 @@ Why this matters:
 - Transitive pinning avoids unplanned updates that could break builds unexpectedly.
 
 ### Analyzer + Code Style Enforcement
+- `.editorconfig` codifies formatting, indentation, naming, and style preferences for consistent diffs across tools.
 - `.globalconfig` elevates broad CA/Roslyn rules to errors for early design, performance & security feedback.
 - `AnalysisLevel=latest-all` to adopt newest analyzer rules early.
 - `TreatWarningsAsErrors=true` ensures quality gates fail fast.
