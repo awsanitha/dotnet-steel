@@ -7,13 +7,13 @@ A minimal, opinionated .NET 10 solution starter focused on **clarity, reproducib
 This repository refines the default `dotnet new` templates by layering in a small set of production‑minded conventions:
 
 - **.NET 10 / C# 14 preview ready** via `global.json` + explicit `LangVersion` + suppression of preview banners.
-- **Reproducible builds** using the `DotNet.ReproducibleBuilds` SDK (isolated mode) so builds are deterministic.
 - **Central package management** (`Directory.Packages.props`) with transitive version pinning.
+- **Central artifacts output** using SDK artifacts layout (`ArtifactsPath` in `Directory.Build.props`) for predictable build/test outputs under `artifacts/`.
+- **Reproducible builds** using the `DotNet.ReproducibleBuilds` SDK (isolated mode) so builds are deterministic.
 - **Treat warnings as errors** and latest analyzer rules (`AnalysisLevel=latest-all`).
-- **Optimized build pipeline** (`OptimizeImplicitlyTriggeredBuilds=true`).
 - **Modern test stack**: Microsoft Testing Platform runner + xUnit v3 + built‑in code coverage extension.
 - **Locked dependency graph** using NuGet lock files (`RestorePackagesWithLockFile`).
-- **Simple, readable structure**: `src/` and `tests/` only.
+- **Simple, readable structure**: projects are organized into `src/` and `tests/` directories.
 
 Use it when you need a trustworthy baseline before layering domain logic, additional projects (class libraries, web APIs), or CI/CD workflows.
 
