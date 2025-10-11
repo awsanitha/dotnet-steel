@@ -2,6 +2,8 @@
 
   <!-- Common project properties -->
   <PropertyGroup>
+    <!-- Artifacts output layout
+         https://learn.microsoft.com/dotnet/core/sdk/artifacts-output -->
     <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
   </PropertyGroup>
 
