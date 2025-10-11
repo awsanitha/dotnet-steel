@@ -1,17 +1,19 @@
 {
-  "name": ".NET Steel",
-  "image": "mcr.microsoft.com/devcontainers/base:noble",
-  "features": {
-    "ghcr.io/devcontainers/features/dotnet:2": {
-      "version": "10.0",
-      "aspNetCoreRuntimeVersions": "9.0" // used by ms-dotnettools.csdevkit
+    "name": ".NET Steel",
+    "image": "mcr.microsoft.com/devcontainers/base:noble",
+    "features": {
+        "ghcr.io/devcontainers/features/dotnet:2": {
+            "version": "10.0",
+            "aspNetCoreRuntimeVersions": "9.0" // used by ms-dotnettools.csdevkit
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.csdevkit",
+                "TimHeuer.resx-editor",
+                "editorconfig.editorconfig"
+            ]
+        }
     }
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "ms-dotnettools.csdevkit"
-      ]
-    }
-  }
 }
