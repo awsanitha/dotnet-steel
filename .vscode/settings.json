@@ -1,0 +1,7 @@
+{
+  "dotnet.automaticallyCreateSolutionInWorkspace": false,
+  "dotnet.defaultSolution": "Steel.slnx",
+  "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "fullSolution",
+  "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "fullSolution",
+  "dotnet.testWindow.useTestingPlatformProtocol": true
+}
