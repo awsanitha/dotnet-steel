@@ -7,6 +7,10 @@
       "aspNetCoreRuntimeVersions": "9.0" // used by ms-dotnettools.csdevkit
     }
   },
+  "containerEnv": {
+    "DOTNET_NOLOGO": "true",
+    "DOTNET_CLI_TELEMETRY_OPTOUT": "true"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
