@@ -28,7 +28,9 @@
     }
   ],
   "onCreateCommand": {
-    "workloads": "sudo dotnet workload update",
+    "workloads": "sudo dotnet workload update"
+  },
+  "postStartCommand": {
     "dev-cert": "bash .devcontainer/setup-dotnet-dev-cert.sh ",
     "dotnet tools": "dotnet tool restore"
   }
