@@ -9,7 +9,10 @@
        https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/language -->
   <PropertyGroup>
     <!-- https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/language#langversion -->
-    <LangVersion>13.0</LangVersion>
+    <LangVersion>14.0</LangVersion>
+
+    <!-- https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-environment-variables#suppressnetcoresdkpreviewmessage -->
+    <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
 
     <!-- https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/language#nullable-->
     <Nullable>enable</Nullable>
