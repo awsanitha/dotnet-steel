@@ -5,11 +5,11 @@ root = true
 indent_style = space
 
 # Xml files
-[*.xml]
+[*.{xml,slnx,csproj,props,targets}]
 indent_size = 2
 
 # JSON files
-[*.json]
+[*.{json,jsonc}]
 indent_size = 2
 
 # YAML files
