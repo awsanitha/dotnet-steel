@@ -44,4 +44,9 @@
     <OptimizeImplicitlyTriggeredBuilds>true</OptimizeImplicitlyTriggeredBuilds>
   </PropertyGroup>
 
+  <!-- Code analysis -->
+  <PropertyGroup>
+    <!-- https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#enforcecodestyleinbuild -->
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
 </Project>
