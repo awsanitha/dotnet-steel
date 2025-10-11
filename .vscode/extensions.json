@@ -2,6 +2,6 @@
   "recommendations": [
     "ms-dotnettools.csdevkit",
     "TimHeuer.resx-editor",
-    "editorconfig.editorconfig"
+    "EditorConfig.EditorConfig"
   ]
 }

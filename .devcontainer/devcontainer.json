@@ -1,19 +1,31 @@
 {
-    "name": ".NET Steel",
-    "image": "mcr.microsoft.com/devcontainers/base:noble",
-    "features": {
-        "ghcr.io/devcontainers/features/dotnet:2": {
-            "version": "10.0",
-            "aspNetCoreRuntimeVersions": "9.0" // used by ms-dotnettools.csdevkit
-        }
-    },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-dotnettools.csdevkit",
-                "TimHeuer.resx-editor",
-                "editorconfig.editorconfig"
-            ]
-        }
+  "name": ".NET Steel",
+  "image": "mcr.microsoft.com/devcontainers/base:noble",
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:2": {
+      "version": "10.0",
+      "aspNetCoreRuntimeVersions": "9.0" // used by ms-dotnettools.csdevkit
     }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csdevkit",
+        "TimHeuer.resx-editor",
+        "EditorConfig.EditorConfig"
+      ]
+    }
+  },
+  "mounts": [
+    {
+      "type": "volume",
+      "source": "x509stores",
+      "target": "/home/vscode/.dotnet/corefx/cryptography/x509stores"
+    }
+  ],
+  "onCreateCommand": {
+    "workloads": "sudo dotnet workload update",
+    "dev-cert": "bash .devcontainer/setup-dotnet-dev-cert.sh ",
+    "dotnet tools": "dotnet tool restore"
+  }
 }
