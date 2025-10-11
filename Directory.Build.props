@@ -1,4 +1,11 @@
 <Project>
+  <!-- Reproducible builds
+       https://github.com/dotnet/reproducible-builds/tree/main -->
+  <Sdk Name="DotNet.ReproducibleBuilds.Isolated" Version="1.2.39" />
+
+  <ItemGroup>
+    <PackageReference Include="DotNet.ReproducibleBuilds" PrivateAssets="All"/>
+  </ItemGroup>
 
   <!-- Common project properties -->
   <PropertyGroup>
@@ -49,4 +56,5 @@
     <!-- https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#enforcecodestyleinbuild -->
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
   </PropertyGroup>
+
 </Project>
