@@ -41,6 +41,9 @@
 
   <!-- Build-related properties -->
   <PropertyGroup>
+    <!-- https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#generatedocumentationfile -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
     <!-- https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#optimizeimplicitlytriggeredbuild -->
     <OptimizeImplicitlyTriggeredBuilds>true</OptimizeImplicitlyTriggeredBuilds>
   </PropertyGroup>
@@ -50,6 +53,13 @@
     <!-- https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#enforcecodestyleinbuild -->
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
   </PropertyGroup>
+
+  <!-- Analyzer config inclusion for all projects
+       https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/configuration-files -->
+  <ItemGroup>
+    <!-- https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/configuration-files#global-analyzerconfig -->
+    <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory)analyzers/*.globalconfig" />
+  </ItemGroup>
 
   <!-- Package-related properties
        https://learn.microsoft.com/en-us/nuget/reference/msbuild-targets -->

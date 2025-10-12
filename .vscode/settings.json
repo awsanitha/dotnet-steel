@@ -5,6 +5,6 @@
   "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "fullSolution",
   "dotnet.testWindow.useTestingPlatformProtocol": true,
   "files.associations": {
-    ".globalconfig": "editorconfig"
+    "*.globalconfig": "editorconfig"
   }
 }
